@@ -10,14 +10,14 @@ from deskew import determine_skew
 @pytest.mark.parametrize(
     "image,expected_angle",
     [
-        ("1", pytest.approx(-1.375, abs=0.37)),
-        ("2", pytest.approx(-2.185, abs=0.18)),
-        ("3", pytest.approx(-6.250, abs=0.22)),
-        ("4", pytest.approx(7.095, abs=0.1)),
-        ("5", pytest.approx(3.410, abs=0.7)),
-        ("6", pytest.approx(-2.810, abs=0.21)),
-        ("7", pytest.approx(3.395, abs=0.7)),
-        ("8", pytest.approx(15.084, abs=0.05)),
+        ("1", pytest.approx(-1.375, abs=0.6)),
+        ("2", pytest.approx(-2.185, abs=0.6)),
+        ("3", pytest.approx(-6.250, abs=0.6)),
+        ("4", pytest.approx(6.3, abs=0.6)),
+        ("5", pytest.approx(3.410, abs=0.6)),
+        ("6", pytest.approx(-2.810, abs=0.6)),
+        ("7", pytest.approx(3.395, abs=0.6)),
+        ("8", pytest.approx(14.9, abs=0.6)),
     ],
 )
 def test_deskew(image, expected_angle):
